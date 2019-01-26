@@ -1,9 +1,18 @@
-window.onload = function(){
-    //All elements
-    const target = document.querySelectorAll('[data-lazy-load]');
+class LazyLoad{
+    
+    private target_el;
 
-    //Observer function to each element
-    const lazyLoad = (item) => {
+    constructor(target_el){
+        this.target_el = document.querySelectorAll(target_el);
+        this.init();
+
+    }
+
+    private init = () => {
+        this.target_el.forEach(this.lazyLoad);
+    }
+
+    private lazyLoad = (item) => {
         const io = new IntersectionObserver((entries, observer) =>  {
             entries.forEach(entry => {    
                 if(entry.isIntersecting){
@@ -15,11 +24,7 @@ window.onload = function(){
             });
         });
         io.observe(item);
-    };
-    
-    //Apply observer function to target elements
-    target.forEach(lazyLoad);
+    }
 }
 
-  
- 
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+    [data-lazy-load]{
+        display: block;
+        transform: translateX(50%);
+        opacity: 0;
+        transition: all 1000ms;
+    }
+    .fade{
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 1000ms;
+    }
+    </style>
+    <title>Lazy Load</title>
+</head>
+<body>
+    <div class="container">
+        <img src="http://placeimg.com/600/600/any?1" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?2" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?4" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?63" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?57" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?6" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?8" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?12" class="img-fluid" alt="Responsive image" data-lazy-load>
+
+        <div style="background-image: url('http://placeimg.com/600/600/any?11');min-height: 600px;" data-lazy-load></div>
+
+        <img src="http://placeimg.com/600/600/any?14" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?15" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?16" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?17" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?18" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?19" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?21" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?221" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?111" class="img-fluid" alt="Responsive image" data-lazy-load>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

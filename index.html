@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <style>
-    [data-lazy-load]{
+    [data-lazy-load],[data-custom]{
         display: block;
         transform: translateX(50%);
         opacity: 0;
@@ -33,19 +33,20 @@
 
         <div style="background-image: url('http://placeimg.com/600/600/any?11');min-height: 600px;" data-lazy-load></div>
 
-        <img src="http://placeimg.com/600/600/any?14" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?15" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?16" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?17" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?18" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?19" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?21" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?221" class="img-fluid" alt="Responsive image" data-lazy-load>
-        <img src="http://placeimg.com/600/600/any?111" class="img-fluid" alt="Responsive image" data-lazy-load>
+        <img src="http://placeimg.com/600/600/any?14" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?15" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?16" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?17" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?18" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?19" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?21" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?221" class="img-fluid" alt="Responsive image" data-custom>
+        <img src="http://placeimg.com/600/600/any?111" class="img-fluid" alt="Responsive image" data-custom>
     </div>
     <script src="scripts/src/lazyLoad.js"></script>
     <script>
     const lazyLoadInit = new LazyLoad('[data-lazy-load]');
+    const lazyLoadCustom = new LazyLoad('[data-custom]');
     </script>
 </body>
 </html>

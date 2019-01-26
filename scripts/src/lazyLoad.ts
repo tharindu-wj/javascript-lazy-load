@@ -1,5 +1,6 @@
 class LazyLoad{
     
+    //Tagret elements 
     private target_el;
 
     constructor(target_el){
@@ -8,10 +9,12 @@ class LazyLoad{
 
     }
 
+    //Apply observer function to target elements
     private init = () => {
         this.target_el.forEach(this.lazyLoad);
     }
 
+    //Observer function to each element
     private lazyLoad = (item) => {
         const io = new IntersectionObserver((entries, observer) =>  {
             entries.forEach(entry => {    

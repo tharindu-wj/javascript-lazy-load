@@ -1,0 +1,12 @@
+{
+    "name": "tharindu-wj/javascript-lazy-load",
+    "description": "javascript-lazy-load",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tharindu Wickramasinghe",
+            "email": "jhtw99@gmail.com"
+        }
+    ],
+    "require": {}
+}
